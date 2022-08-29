@@ -1,7 +1,16 @@
-export default function Home(){
-    return(
-        <div className={`flex h-screen justify-center items-center bg-gradient-to-r from-orange-400 to-yellow-400`}>
-            <span className="text-4xl">oi</span>
+import Entrada from "../components/Entrada"
+import Navbar from "../components/Navbar"
+import Posts from "../components/Posts"
+
+export default function Home() {
+    return (
+        <div className={`flex-col h-screen justify-center  bg-gradient-to-r from-orange-400 to-yellow-400`}>
+            <Navbar />
+            <Entrada />
+            <Posts />
+            <Posts />
+            <Posts />
+
         </div>
     )
 }
