@@ -1,7 +1,7 @@
 const express = require("express");
 const routes = express.Router();
 
-const PostsController = require('../controllers/postsController');
+const PostsController = require('../domain/controllers/postsController');
 
 routes.post('/', PostsController.createPost)
 routes.get('/', PostsController.listPosts)

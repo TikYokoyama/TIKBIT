@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const routes = require("./routes");
-const db = require('./database');
+const db = require('./infraestructure/database');
 const porta = 5500;
 
 const app = express();

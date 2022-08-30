@@ -1,21 +1,34 @@
-const { request } = require("express");
+// const { Request, Response } = require("express");
 const Posts = require("../models/Posts");
 
 const postsController = {
 
     //OK
     async createPost(req, res) {
-        const { userName, coment } = req.body;
+        // console.log(req.body);
+        try {
+            const { userName, coment } = req.body;
 
-        if (!userName || !coment ) {
-            return res.status(400).json("Preencha todos os campos corretamente");
-        };
+            if (!userName || !coment)
+                return res.status(400).json({
+                    message: 'usuário e conteúdo são obrigatórios!'
+                })
 
-        const newComment = await Posts.create({
-            userName,
-            coment,
-        });
-        res.status(201).json(newComment);
+            const newPost = await Posts.create({
+                userName,
+                coment
+            });
+
+            
+
+            res.json(newPost);
+        }
+
+        catch (error) {
+            console.error(error);
+            res.json('Não foi possível publicar');
+
+        }
     },
 
     //OK
@@ -36,7 +49,8 @@ const postsController = {
     //OK
     async deletePost(req, res) {
         try {
-            const { id } = req.params;
+            console.log(req.params.id);
+            const id  = req.params.id;
 
             if (!id) {
                 return res.status(400).json("id nao encontrado");
@@ -59,7 +73,7 @@ const postsController = {
     //OK
     async updatePost(req, res) {
         try {
-            const { id } = req.params;
+            const id  = req.params.id;
             const { userName, coment} = req.body;
 
             if (!id) {
