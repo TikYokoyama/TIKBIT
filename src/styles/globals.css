@@ -8,21 +8,20 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  background-image: linear-gradient(to right, #FFCC80, #FFF176);
+  background-attachment: local;
 }
 
 * {
   box-sizing: border-box;
+  /* background-image: linear-gradient(to right, rgb(239, 167, 31) , yellow); */
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
