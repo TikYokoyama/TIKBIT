@@ -1,6 +1,6 @@
 ## TIKBIT
 
-<img align="right" width="600"  src="/docs/mytraveljounal.jpeg">
+<img align="right" width="600"  src="/docs/tikbit.jpeg">
 
 O projeto foi para um estudo em React.js, no qual foi desenvolvido uma rede social ficticea. Os posts sao listados em ordem decrescente de criação, podem ser atualizados ou deletados.
 Com o intuito de ser uma aplicação completa foi desenvolvido também uma API em Node.js, para que o usuário pudesse sempre estar atualizando a rede social!
