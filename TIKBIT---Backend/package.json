@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-jwt": "^7.7.5",
+    "express-validation": "^4.1.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.4"
+  },
+  "name": "tikbit-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "jest --forceExit"
+  },
+  "author": "TikYokoyama",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TikYokoyama/TIKBIT---Backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TikYokoyama/TIKBIT---Backend/issues"
+  },
+  "homepage": "https://github.com/TikYokoyama/TIKBIT---Backend#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.0.1"
+  }
+}
